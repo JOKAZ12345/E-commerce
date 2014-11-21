@@ -31,6 +31,12 @@ def cosine(doc_1, doc_2):
 
     res_2 = sum_3 ** 0.5  # pow
 
+    if res_1 == 0:
+        return 0
+
+    if res_2 == 0:
+        return 0
+
     cosine = sum / (res_1 * res_2)
 
     return cosine

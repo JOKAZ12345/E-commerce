@@ -300,9 +300,7 @@ space_vectors = []
 # GETS THE SPACE VECTORS FOR EACH DOCUMENT ACCORDING TO THE LEXICON
 i = 0
 while i < 100:
-
-    print 'vector: ' + str(i)
-    dic_A = dictAllDocs[dic_key[i]]  # dic contains our vector space model already sorted
+    dic_A = dictAllDocs[dic_key[i]]
 
     f = open('vectors/' + str(i), 'w')
 
@@ -331,6 +329,38 @@ while i < 100:
 u = space_vectors[0]
 v = space_vectors[1]
 cos = cosine(u, v)  # example.. this calculates the similarity between doc_1 and doc_2
+similar_docs = {}
+randomDocs = []
+
+i = 0
+while i < 5:
+    randNumber = randint(0, 99)
+    if randNumber not in randomDocs:
+        randomDocs.append(randNumber)
+        i += 1
+
+d = dictAllDocs(dic_key[randomDocs[0]])
+i = 1
+max = 0
+doc = 0
+
+while i < 100:
+    cos = cosine(u, space_vectors[i])
+
+    similar_docs[i] = cos
+
+    i += 1
+
+maxAux = sorted(similar_docs.items(), key=itemgetter(1), reverse=True)
+
+i = 0
+
+for item in maxAux:
+    if i >= 5:
+        break
+    print "Doc " + str(item[0]) + " - Cos " + str(item[1])
+    i += 1
+
 cos2 = 1 - scipy.spatial.distance.cosine(u, v)
 d = scipy.spatial.distance.cityblock(u, v)
 d2 = scipy.spatial.distance.euclidean(u, v)
