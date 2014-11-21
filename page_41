@@ -1,0 +1,1847 @@
+<!doctype html>
+
+<!--[if lt IE 9]><html id="root" class="no-js lt-ie9 no-touch" lang="en"> <![endif]-->
+<!--[if gte IE 9]><!--> <html id="root" class="no-js no-touch" lang="en"> <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	<title>Ebola Outbreak: Dozens Monitored In Spain</title>
+	<meta name="description" content="More than 50 people are being monitored over fears they could be infected, as EU chiefs demand &quot;clarification&quot; from Madrid.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="/images/3f2e5004.sky-news-touch.png"><!-- 60x60 -->
+	<link rel="apple-touch-icon" sizes="76x76" href="/images/5e8a5531.sky-news-touch-ipad.png"><!-- 76x76 -->
+	<link rel="apple-touch-icon" sizes="120x120" href="/images/56a5449a.sky-news-touch-retina.png"><!-- 120x120 -->
+	<link rel="apple-touch-icon" sizes="152x152" href="/images/39552c73.sky-news-touch-retina-ipad.png"><!-- 152x152 -->
+
+    <meta name="sky:analytics:site" content="sky/portal/news">
+    <meta name="sky:analytics:account" content="bskybskynews,bskybnetworkglobal">
+
+    
+<meta name="sky:analytics:section" content="uk/Ebola Outbreak: Dozens Monitored In Spain">
+<meta name="sky:analytics:headline" content="Ebola Outbreak: Dozens Monitored In Spain">
+<meta name="sky:analytics:contentType" content="story">
+<meta name="sky:analytics:contentId" content="1348716">
+<meta name="sky:ad:tag" content="skynewsuknews">
+
+	<meta name="sky:ad:network" content="999.1">
+
+	<meta property="fb:app_id" content="239540442824922"/>
+	<meta property="og:site_name" content="Sky News"/>
+	<meta property="og:locale" content="en_GB"/>
+	
+<meta property="og:title" content="Ebola Outbreak: Dozens Monitored In Spain">
+<meta property="og:description" content="More than 50 people are being monitored over fears they could be infected, as EU chiefs demand &quot;clarification&quot; from Madrid.">
+<meta property="og:url" content="http://news.sky.com/story/1348716/ebola-outbreak-dozens-monitored-in-spain">
+<meta property="og:type" content="article">
+<meta property="og:image" content="http://media.skynews.com/media/images/generated/2014/10/8/340637/default/v2/teresa-romero-ramos-ambulance-split-1-1-1600x900.jpg"/>
+
+
+	
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@skynews" />
+
+
+    <script>
+    var adtechEnabled = true,
+    	analyticsEnabled = true;
+
+    (function() {
+		var root = document.getElementById('root');
+		root.className = root.className.replace('no-js', 'js');
+
+		// Chartbeat script needed at beginning of head
+		var _sf_startpt=(new Date()).getTime();
+		window.skynews = {};
+		window.skynews.config = {
+			videoPlayerUrl: "//player.sky.com/dist/jquery.skyplayer"
+		};
+	}());
+	</script>
+
+	<!--[if lt IE 9]>
+	<link rel="stylesheet" href="/styles/fcdbf14e.lt-ie9.css" >
+	<script src="/scripts/a45bfc9a.ie.js"></script>
+	<![endif]-->
+
+	<!--[if gte IE 9]><!-->
+	<link rel="stylesheet" href="/styles/3e5fabd7.main.css">
+	<!--<![endif]-->
+
+	<link rel="stylesheet" href="//player.sky.com/css/skyplayer.min.css" >
+
+	<!-- AUDIENCE SCIENCE AD TAG CODE -->
+	<script type="text/javascript">
+		var rsi_segs = [];
+		var segs_beg=document.cookie.indexOf('rsi_segs=');
+		if(segs_beg>=0){
+		 segs_beg=document.cookie.indexOf('=',segs_beg)+1;
+		 if(segs_beg>0){
+		  var segs_end=document.cookie.indexOf(';',segs_beg);
+		  if(segs_end==-1)segs_end=document.cookie.length;
+		  rsi_segs=document.cookie.substring(segs_beg,segs_end).split('|');
+		}}
+		var segLen=20
+		var segQS="",segArr=new Array()
+		if (rsi_segs.length<segLen){segLen=rsi_segs.length}
+		for (var i=0;i<segLen;i++){
+		    segArr=rsi_segs[i].split("_")
+		    if (segArr.length>1) segQS+=("rsi"+"="+segArr[1]+"+")
+		}
+	</script>
+	<!-- END AUDIENCE SCIENCE AD TAG CODE -->
+</head>
+
+<body data-sn-base-url="http://news.sky.com">
+	<div id="cookie-notice" class="cookie-notice">
+		<div class="cookie-notice__wrapper">
+			<p class="cookie-notice__text">We use <a href="http://help.sky.com/security/privacy/privacy-and-cookies-notice" target="_blank">cookies</a> to give you the best experience. If you do nothing we'll assume that it's ok.</p>
+			<button type="button" id="cookie-notice__close" class="cookie-notice__close" onclick="handleCookieCloseClick()">
+				<span class="cookie-notice__close-text">
+					Close
+				</span>
+				<i class="cookie-notice__close-icon skycon skycon-close"></i>
+			</button>
+			<script>
+				function hideCookieNotice() { document.getElementById('cookie-notice').className='cookie-notice cookie-notice--hidden'; }
+				function handleCookieCloseClick() {
+					document.cookie='eucd=0;path=/;expires='+(new Date(+new Date()+157785e6)).toGMTString();
+					hideCookieNotice();
+				}
+				if (document.cookie.search('eucd=0') !== -1) {
+					hideCookieNotice();
+				}
+			</script>
+		</div>
+	</div>
+	<div class="viewport">
+		
+<div class="header" role="banner">
+	<div class="header__content">
+
+		<div class="header__logo">
+			<a href="/" class="header__link"><img src="/images/33af33c7.sky-news-logo.png" alt="Sky News" class="header__image"></a>
+		</div>
+
+		<span class="edition edition--desktop js-edition">
+			<a href="/us" class="js-edition__link edition__link">Switch to US Edition</a>
+		</span>
+
+		<span class="search search--desktop">
+			<form action="/search" method="get">
+	<span class="search__icon skycon-search"></span>
+	<input type="search" name="term" class="search__input" placeholder="Search Sky News" value="">
+	<input type="hidden" name="filter" value="">
+	<!-- <span class="close__icon skycon skycon--close"></span> -->
+
+	<button class="search__clear-button skycon-close js-button-close skycon" type="button">
+		<span class="button__a11y">Clear search</span>
+	</button>
+
+	<button type="submit" class="search__button skycon-search"><span class="search__button-text">Search</span></button>
+</form>
+		</span>
+
+		<div class="navigation" data-append="navigation">
+			
+
+<nav class="js-append" role="navigation">
+	<ul class="navigation__list">
+		<li class="navigation__item navigation__item--first"><a href="/" class="navigation__link">Home</a></li>
+		<li class="navigation__item navigation__item--even"><a href="/uk" class="navigation__link navigation__link--active">UK</a></li>
+		<li class="navigation__item"><a href="/world" class="navigation__link">World</a></li>
+		<li class="navigation__item navigation__item--even"><a href="/usnews" class="navigation__link">US</a></li>
+		<li class="navigation__item"><a href="/business" class="navigation__link">Business</a></li>
+		<li class="navigation__item navigation__item--even"><a href="/politics" class="navigation__link">Politics</a></li>
+		<li class="navigation__item"><a href="/technology" class="navigation__link">Technology</a></li>
+		<li class="navigation__item navigation__item--even"><a href="/entertainment" class="navigation__link">Entertainment</a></li>
+		<li class="navigation__item navigation__item--9"><a href="/strangenews" class="navigation__link">Strange News</a></li>
+		<li class="navigation__item navigation__item--even navigation__item--10"><a href="/weather" class="navigation__link">Weather</a></li>
+
+		<li class="navigation__item navigation__item--more navigation__item--last">
+			<button class="button button--more js-button-more">More
+				<span class="chevron__container">
+					<img class="chevron__image" src="/images/67d84858.chevron.png" alt="" />
+				</span>			
+			</button>
+
+			
+	<div class="panel panel--small js-panel--small">
+
+		
+
+		<div class="panel__section">
+			<ul class="social__list">
+	<li class="social__item">
+		<a class="social__link" href="https://twitter.com/SkyNews">
+			<i aria-hidden="true" class="skycon skycon-twitter social--icon"></i>
+			<span class="social__pre-text">Sky News on </span><span class="social__name">Twitter</span>
+		</a>
+	</li>
+
+	<li class="social__item">
+		<a class="social__link" href="https://www.facebook.com/skynews">
+			<i aria-hidden="true" class="skycon skycon-facebook social--icon"></i>
+			<span class="social__pre-text">Sky News on </span><span class="social__name">Facebook</span>
+		</a>
+	</li>
+
+	<li class="social__item social__item--last">
+		<a class="social__link" href="https://plus.google.com/+SkyNews">
+			<i aria-hidden="true" class="skycon skycon-google-plus social--icon"></i>
+			<span class="social__pre-text">Sky News on </span><span class="social__name">Google+</span>
+		</a>
+	</li>
+</ul>
+
+
+			<a href="http://news.sky.com/interactive/1345361/watch-sky-news-live" class="button button--watch-live button--watch-live-panel-small">Watch Live</a>
+		</div>
+
+		
+
+	</div>
+
+		</li>
+	</ul>
+</nav>
+
+
+		</div>
+
+	 	<a href="http://news.sky.com/interactive/1345361/watch-sky-news-live" class="button button--watch-live button--watch-live-desktop">Watch Live</a>
+
+		<span class="header__header-gradient">
+			<button class="button button--burger js-button-burger">
+				<i class="burger"><span class="button__a11y">Menu</span></i>
+			</button>
+		</span>
+
+		
+	<div class="panel panel--large js-panel--large">
+
+		
+		<span class="search search--mobile">
+			<form action="/search" method="get">
+	<span class="search__icon skycon-search"></span>
+	<input type="search" name="term" class="search__input" placeholder="Search Sky News" value="">
+	<input type="hidden" name="filter" value="">
+	<!-- <span class="close__icon skycon skycon--close"></span> -->
+
+	<button class="search__clear-button skycon-close js-button-close skycon" type="button">
+		<span class="button__a11y">Clear search</span>
+	</button>
+
+	<button type="submit" class="search__button skycon-search"><span class="search__button-text">Search</span></button>
+</form>
+		</span>
+
+		<div class="navigation--panel" data-append="navigation"></div>
+		
+
+		<div class="panel__section">
+			<ul class="social__list">
+	<li class="social__item">
+		<a class="social__link" href="https://twitter.com/SkyNews">
+			<i aria-hidden="true" class="skycon skycon-twitter social--icon"></i>
+			<span class="social__pre-text">Sky News on </span><span class="social__name">Twitter</span>
+		</a>
+	</li>
+
+	<li class="social__item">
+		<a class="social__link" href="https://www.facebook.com/skynews">
+			<i aria-hidden="true" class="skycon skycon-facebook social--icon"></i>
+			<span class="social__pre-text">Sky News on </span><span class="social__name">Facebook</span>
+		</a>
+	</li>
+
+	<li class="social__item social__item--last">
+		<a class="social__link" href="https://plus.google.com/+SkyNews">
+			<i aria-hidden="true" class="skycon skycon-google-plus social--icon"></i>
+			<span class="social__pre-text">Sky News on </span><span class="social__name">Google+</span>
+		</a>
+	</li>
+</ul>
+
+
+			<a href="http://news.sky.com/interactive/1345361/watch-sky-news-live" class="button button--watch-live button--watch-live-panel-large">Watch Live</a>
+		</div>
+
+		
+		<span class="edition edition--panel-large js-edition">
+			<a href="/us" class="js-edition__link edition__link">Switch to US Edition</a>
+		</span>
+		
+
+	</div>
+
+
+	</div>
+</div>
+
+		
+		
+		
+
+<div class="ad ad--leaderboard" role="complementary" data-ad-type="banner" aria-label="Advertisement"></div>
+
+
+		
+		
+		
+
+<div role="main" class="main">
+	<article class="story">
+		
+		<header class="story__header">
+			<h1 class="story__headline story__headline--normal" aria-label="Ebola Outbreak: Dozens Monitored In Spain">
+				<span aria-hidden="true">Ebola Outbreak: Dozens Monitored In Spain</span>
+			</h1>
+			<p class="story__standfirst">More than 50 people are being monitored over fears they could be infected, as EU chiefs demand &quot;clarification&quot; from Madrid.</p>
+			<div class="last-updated">
+				<p class="last-updated__text">
+					<span class="last-updated__time">09:10, UK, </span>
+					<span class="last-updated__day">Wednesday 08</span>
+					<span class="last-updated__month-year">October 2014</span>
+				</p>
+			</div>
+		</header>
+
+		<!-- "normal" wrapper. Post-story content floated alongside primary and content -->
+		<div class="story__content-outer-wrapper">
+			<section class="story__media">
+				
+					
+						
+					
+					<div class="module module--primary">
+						
+
+	
+		
+
+	<div class="module video" data-format-low="http://video.news.sky.com/video/h264/vod/374/2014/10/081014EbolaSpencer051412741745706374.mp4" data-format-high="http://video.news.sky.com/video/h264/vod/700/2014/10/081014EbolaSpencer051412741745706700.mp4">
+		<div class="video__placeholder-wrapper js-video">
+
+			
+
+	
+	
+	
+	
+	
+		
+	
+	
+	 
+
+	<div class="image">
+		<div class="image__wrapper image__wrapper--16x9">
+			<img src="http://media.skynews.com/media/images/generated/2014/10/6/340364/default/v2/priest-returns-1-144x81.jpg" class="image__item video__teaser-image js-responsive" data-template="http://media.skynews.com/media/images/generated/2014/10/6/340364/default/v2/priest-returns-1-{width}x{height}.jpg" data-sizes="144x81 362x204 762x428 942x530" data-sizes-wide="" data-breakpoint="" alt="" />
+
+			
+		</div>
+
+		
+
+		
+	</div>
+
+
+			<button class="video__play--icon" aria-labelledby="video__caption-1349193">
+				<span class="video__play-a11y">Play video</span>
+			</button>
+		</div>
+
+		<!--html5 video player-->
+		<div class="video__wrapper">
+	        <video class="video__item" data-autoload="true" data-guid="news-1412741745706" data-autoplay="false" data-fwsitesectionid="sky.portal.news:uk:story" preload="metadata">
+				<source src="http://video.news.sky.com/video/h264/vod/374/2014/10/081014EbolaSpencer051412741745706374.mp4" type="video/mp4" data-resolution="small" />
+				<source src="http://video.news.sky.com/video/h264/vod/700/2014/10/081014EbolaSpencer051412741745706700.mp4" type="video/mp4" data-resolution="medium" />
+	        </video>
+    	</div>
+
+        
+		<span id="video__caption-1349193" class="video__caption">
+			<span class="video__type">Video:</span>
+			<span class="video__teaser">56 Being Checked For Ebola In Spain</span>
+		</span>
+		
+
+	</div>
+
+	
+
+
+					</div>
+				
+			</section>
+
+			<!-- "wide primary" wrapper. Post-story content floated alongside content only -->
+			<div class="story__content-wrapper">
+
+				
+	
+
+	<div class="share">
+		<ul class="share__list">
+			<li class="share__item">
+				<a target="_blank" class="share__link js-share" href="https://twitter.com/intent/tweet?text=Ebola%20Outbreak%3A%20Dozens%20Monitored%20In%20Spain&url=http%3A%2F%2Fnews.sky.com%2Fstory%2F1348716%2Febola-outbreak-dozens-monitored-in-spain">
+					<i aria-hidden="true" class="skycon skycon-twitter share--icon"></i>
+					<span class="a11y">Share on Twitter</span>
+				</a>
+			</li>
+
+			<li class="share__item">
+				<a target="_blank" class="share__link js-share" href="https://www.facebook.com/sharer/sharer.php?u=http://news.sky.com/story/1348716/ebola-outbreak-dozens-monitored-in-spain&t=Shared from Sky News: Ebola%20Outbreak%3A%20Dozens%20Monitored%20In%20Spain">
+					<i aria-hidden="true" class="skycon skycon-facebook share--icon"></i>
+					<span class="a11y">Share on Facebook</span>
+				</a>
+			</li>
+
+			<li class="share__item">
+				<a target="_blank" class="share__link js-share" href="https://plus.google.com/share?url=http%3A%2F%2Fnews.sky.com%2Fstory%2F1348716%2Febola-outbreak-dozens-monitored-in-spain">
+					<i aria-hidden="true" class="skycon skycon-google-plus share--icon"></i>
+					<span class="a11y">Share on Google+</span>
+				</a>
+			</li>
+
+
+			<li class="share__item share__item-whatsapp">
+				<a target="_blank" class="share__link js-share" href="whatsapp://send?text=Shared from Sky News: Ebola%20Outbreak%3A%20Dozens%20Monitored%20In%20Spain%20http%3A%2F%2Fnews.sky.com%2Fstory%2F1348716%2Febola-outbreak-dozens-monitored-in-spain">
+					<i aria-hidden="true" class="skycon skycon-whatsapp share--icon"></i>
+					<span class="a11y">Share on Whatsapp</span>
+				</a>
+			</li>
+
+
+			<li class="share__item share__item--last">
+				<a class="share__link" href="mailto:?to=&subject=Shared from Sky News: Ebola%20Outbreak%3A%20Dozens%20Monitored%20In%20Spain&body=Shared from Sky News: Ebola%20Outbreak%3A%20Dozens%20Monitored%20In%20Spain%20http%3A%2F%2Fnews.sky.com%2Fstory%2F1348716%2Febola-outbreak-dozens-monitored-in-spain">
+					<i aria-hidden="true" class="skycon skycon-mail share--icon"></i>
+					<span class="a11y">Share by email</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+
+
+				
+
+				<section class="story__content">
+					
+
+						
+
+						
+						<p class="story__intro">A Madrid nurse who became the first person to contract ebola outside of Africa is being treated with antibodies from survivors of the illness, hospital officials have revealed.</p>
+						
+
+						
+							
+							
+
+<div class="ad ad--mpu ad--mpu-story" role="complementary" data-ad-type="mpu" aria-label="Advertisement"></div>
+
+
+						 	
+							
+								
+									
+										<p>Four people, also including her husband, were placed in quarantine at the hospital over fears they may also have the deadly virus, although one of those individuals has now tested negative.</p>
+									
+								
+							
+								
+									
+										<p>The nurse was part of a medical team at the city's La Paz-Carlos III hospital that treated two Spanish missionaries who died shortly after returning from Africa with the disease.</p>
+									
+								
+							
+								
+									
+										<p>A second nurse who also helped treat an infected priest was among the four initially being monitored by health workers, as was a man who arrived on a flight from Nigeria displaying symptoms.</p>
+									
+								
+							
+								
+									
+										<p>Spain's health authorities said they had been in touch with a total of 22 people who are thought to have been in contact with the 40-year-old nurse, whose name has not been released.</p>
+									
+								
+							
+								
+									
+										
+
+	
+		
+
+	<div class="module module--inline  video" data-format-low="http://video.news.sky.com/video/h264/vod/374/2014/10/071014EBOLAMOORE17001412698498290374.mp4" data-format-high="http://video.news.sky.com/video/h264/vod/700/2014/10/071014EBOLAMOORE17001412698498290700.mp4">
+		<div class="video__placeholder-wrapper js-video">
+
+			
+
+	
+	
+	
+	
+	
+		
+	
+	
+	 
+
+	<div class="image">
+		<div class="image__wrapper image__wrapper--16x9">
+			<img src="http://media.skynews.com/media/images/generated/2014/10/7/340560/default/v1/071014-ebola-moore-vt-training-for-outbreak-1-144x81.jpg" class="image__item video__teaser-image js-responsive" data-template="http://media.skynews.com/media/images/generated/2014/10/7/340560/default/v1/071014-ebola-moore-vt-training-for-outbreak-1-{width}x{height}.jpg" data-sizes="144x81 362x204 762x428 942x530" data-sizes-wide="" data-breakpoint="" alt="" />
+
+			
+		</div>
+
+		
+
+		
+	</div>
+
+
+			<button class="video__play--icon" aria-labelledby="video__caption-1348990">
+				<span class="video__play-a11y">Play video</span>
+			</button>
+		</div>
+
+		<!--html5 video player-->
+		<div class="video__wrapper">
+	        <video class="video__item" data-autoload="true" data-guid="news-1412698498290" data-autoplay="false" data-fwsitesectionid="sky.portal.news:uk:story" preload="metadata">
+				<source src="http://video.news.sky.com/video/h264/vod/374/2014/10/071014EBOLAMOORE17001412698498290374.mp4" type="video/mp4" data-resolution="small" />
+				<source src="http://video.news.sky.com/video/h264/vod/700/2014/10/071014EBOLAMOORE17001412698498290700.mp4" type="video/mp4" data-resolution="medium" />
+	        </video>
+    	</div>
+
+        
+		<span id="video__caption-1348990" class="video__caption">
+			<span class="video__type">Video:</span>
+			<span class="video__teaser">UK Ebola Risk &#39;Remains Low&#39;</span>
+		</span>
+		
+
+	</div>
+
+	
+
+
+									
+								
+							
+								
+									
+										<p>They are also monitoring around 30 other members of the health care team that treated one of the missionaries.</p>
+									
+								
+							
+								
+									
+										<p>Officials added that although the nurse began a holiday after one of the missionaries she had been caring for died on 25 September, she did not leave Madrid during this time.</p>
+									
+								
+							
+								
+									
+										<p>She began feeling ill on 30 September and was diagnosed with ebola on Monday, but is in a stable condition.</p>
+									
+								
+							
+								
+									
+										<p>EU countries have demanded an explanation from Spain's health minister as to how the nurse caught the disease, despite all the precautions taken</p>
+									
+								
+							
+								
+									
+										<p>A spokesman said a letter sent to the health minister sought "to obtain some clarification" from Spanish authorities, adding: "The priority remains to find out what actually happened."</p>
+									
+								
+							
+								
+									
+										<p>Spain's health minister, Ana Mato, said an emergency protocol is in place and that authorities are working to establish the source of the contagion at the Madrid hospital.</p>
+									
+								
+							
+								
+									
+										
+
+	
+		
+
+	<div class="module module--inline  video" data-format-low="http://video.news.sky.com/video/h264/vod/374/2014/10/061014EBOLABODYRETRIEVALGRABIPAD1412626446053374.mp4" data-format-high="http://video.news.sky.com/video/h264/vod/700/2014/10/061014EBOLABODYRETRIEVALGRABIPAD1412626446053700.mp4">
+		<div class="video__placeholder-wrapper js-video">
+
+			
+
+	
+	
+	
+	
+	
+		
+	
+	
+	 
+
+	<div class="image">
+		<div class="image__wrapper image__wrapper--16x9">
+			<img src="http://media.skynews.com/media/images/generated/2014/10/6/340355/default/v2/cegrab-20141006-174119-270-1-144x81.jpg" class="image__item video__teaser-image js-responsive" data-template="http://media.skynews.com/media/images/generated/2014/10/6/340355/default/v2/cegrab-20141006-174119-270-1-{width}x{height}.jpg" data-sizes="144x81 362x204 762x428 942x530" data-sizes-wide="" data-breakpoint="" alt="" />
+
+			
+		</div>
+
+		
+
+		
+	</div>
+
+
+			<button class="video__play--icon" aria-labelledby="video__caption-1348500">
+				<span class="video__play-a11y">Play video</span>
+			</button>
+		</div>
+
+		<!--html5 video player-->
+		<div class="video__wrapper">
+	        <video class="video__item" data-autoload="true" data-guid="news-1412626446053" data-autoplay="false" data-fwsitesectionid="sky.portal.news:uk:story" preload="metadata">
+				<source src="http://video.news.sky.com/video/h264/vod/374/2014/10/061014EBOLABODYRETRIEVALGRABIPAD1412626446053374.mp4" type="video/mp4" data-resolution="small" />
+				<source src="http://video.news.sky.com/video/h264/vod/700/2014/10/061014EBOLABODYRETRIEVALGRABIPAD1412626446053700.mp4" type="video/mp4" data-resolution="medium" />
+	        </video>
+    	</div>
+
+        
+		<span id="video__caption-1348500" class="video__caption">
+			<span class="video__type">Video:</span>
+			<span class="video__teaser">Body Retrieval Worker Mark Korvoyan</span>
+		</span>
+		
+
+	</div>
+
+	
+
+
+									
+								
+							
+								
+									
+										<p>"We are working to guarantee the safety of all citizens," she said.</p>
+									
+								
+							
+								
+									
+										<p>In the US, <a href="http://news.sky.com/story/1348514/obama-signals-tougher-airport-ebola-screening" target="_blank"><strong>President Barack Obama says airport screening measures are being stepped up in the country to help identify people who might have the deadly virus.</strong></a></p>
+									
+								
+							
+								
+									
+										<p><a href="http://news.sky.com/story/1348692/ebola-seven-facts-about-the-deadly-disease" target="_blank"><strong>More than 3,400 people have died in the latest ebola outbreak</strong></a>, which has swept through West African countries Liberia, Guinea, Sierra Leone and Nigeria.</p>
+									
+								
+							
+								
+									
+										<p>Prime Minister David Cameron is due to chair a Cobra meeting tomorrow to discuss the UK's response to the crisis.</p>
+									
+								
+							
+								
+									
+										<p>"This is part of an ongoing series of Cobr meetings to coordinate the UK response that started in late July and has been in the diary for some time," a Downing Street spokesman said.</p>
+									
+								
+							
+								
+									
+										<p>Meanwhile, the British Army said more than 100 British Army medics were being sent to Sierra Leone to help tackle the ebola crisis within the next few weeks.</p>
+									
+								
+							
+								
+									
+										
+
+	
+		
+
+	<div class="module module--inline  video" data-format-low="http://video.news.sky.com/video/h264/vod/374/2014/10/061014UKEBOLATHOMASMOOREWALL1412620855131374.mp4" data-format-high="http://video.news.sky.com/video/h264/vod/700/2014/10/061014UKEBOLATHOMASMOOREWALL1412620855131700.mp4">
+		<div class="video__placeholder-wrapper js-video">
+
+			
+
+	
+	
+	
+	
+	
+		
+	
+	
+	 
+
+	<div class="image">
+		<div class="image__wrapper image__wrapper--16x9">
+			<img src="http://media.skynews.com/media/images/generated/2014/10/6/340365/default/v1/wall-1-144x81.jpg" class="image__item video__teaser-image js-responsive" data-template="http://media.skynews.com/media/images/generated/2014/10/6/340365/default/v1/wall-1-{width}x{height}.jpg" data-sizes="144x81 362x204 762x428 942x530" data-sizes-wide="" data-breakpoint="" alt="" />
+
+			
+		</div>
+
+		
+
+		
+	</div>
+
+
+			<button class="video__play--icon" aria-labelledby="video__caption-1348441">
+				<span class="video__play-a11y">Play video</span>
+			</button>
+		</div>
+
+		<!--html5 video player-->
+		<div class="video__wrapper">
+	        <video class="video__item" data-autoload="true" data-guid="news-1412620855131" data-autoplay="false" data-fwsitesectionid="sky.portal.news:uk:story" preload="metadata">
+				<source src="http://video.news.sky.com/video/h264/vod/374/2014/10/061014UKEBOLATHOMASMOOREWALL1412620855131374.mp4" type="video/mp4" data-resolution="small" />
+				<source src="http://video.news.sky.com/video/h264/vod/700/2014/10/061014UKEBOLATHOMASMOOREWALL1412620855131700.mp4" type="video/mp4" data-resolution="medium" />
+	        </video>
+    	</div>
+
+        
+		<span id="video__caption-1348441" class="video__caption">
+			<span class="video__type">Video:</span>
+			<span class="video__teaser">The Spread Of Deadly Ebola Virus</span>
+		</span>
+		
+
+	</div>
+
+	
+
+
+									
+								
+							
+								
+									
+										<p>Personnel from the 22 Field Hospital have been undergoing an extensive training exercise in full protective suits, with simulated casualties in make-up.</p>
+									
+								
+							
+								
+									
+										<p>They will staff a field hospital set up specifically to treat medics who have caught the disease, not members of the general public.</p>
+									
+								
+							
+								
+									
+										<p>An Army spokeswoman said: "They are going through all their procedures and getting atuned to wearing their personal protective equipment, working in quite hot temperatures."</p>
+									
+								
+							
+								
+									
+										<p>Experts say <strong><a href="http://news.sky.com/story/1348218/ebola-wont-spread-in-uk-but-africa-needs-us" target="_blank">quarantine systems in developed countries including the UK, US and Spain mean the disease is very unlikely to spread to the same extent seen in poor African countries.</a></strong></p>
+									
+								
+							
+								
+									
+										<p>But the World Health Organisation's European director Zsuzsanna Jakab said some further infections in Europe are "unavoidable".</p>
+									
+								
+							
+								
+									
+										<p>"Such imported cases and similar events as have happened in Spain will happen also in the future, most likely," she said.</p>
+									
+								
+							
+								
+									
+										
+
+	
+		
+
+	
+
+		
+
+		
+		<div class="module gallery gallery--4x3 module--inline gallery--teaser-view data-breakpoint="700">
+		
+
+			<div class="gallery__position" aria-hidden="true"><span class="js-gallery-current">1</span>/<span class="js-gallery-total">11</span></div>
+
+			<div class="gallery__container">
+				<ol class="gallery__list" aria-labelledby="gallery__teaser--1347946">
+					
+					<li class="gallery__item gallery__item--first">
+						
+							
+							<!-- 4:3 landscape -->
+							
+
+	
+	
+	
+	
+	
+		
+	
+	
+	 
+
+	<div class="image">
+		<div class="image__wrapper image__wrapper--4x3">
+			<img src="http://media.skynews.com/media/images/generated/2014/10/5/340192/default/v0/456685244-1-300x225.jpg" class="image__item gallery__image js-responsive" data-template="http://media.skynews.com/media/images/generated/2014/10/5/340192/default/v0/456685244-1-{width}x{height}.jpg" data-sizes="300x225 480x360 800x600 960x720 1024x768 1600x1200" data-sizes-wide="132x74 380x214 522x293 778x437 942x530 1600x900" data-breakpoint="700" alt="LIBERIA-WAFRICA-HEALTH-EBOLA" />
+
+			
+		</div>
+
+		
+
+		
+	</div>
+
+
+							
+							<div class="gallery__text">
+								<p class="gallery__teaser" id="gallery__teaser--1347946"><span class="gallery__module-type">Gallery:</span> The Desperate Fight To Contain The Ebola Outbreak</p>
+								
+									<p class="gallery__caption">A man rests outside the clinic.</p>
+								
+							</div>
+						
+
+						
+					</li>
+					
+					<li class="gallery__item">
+						
+							<script type="text/template" class="gallery__image-template">
+							
+							<!-- 4:3 landscape -->
+							
+
+	
+	
+	
+	
+	
+		
+	
+	
+	
+		
+	 
+
+	<div class="image">
+		<div class="image__wrapper image__wrapper--4x3">
+			<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="image__item gallery__image js-responsive" data-template="http://media.skynews.com/media/images/generated/2014/10/5/340193/default/v0/456634102-1-{width}x{height}.jpg" data-sizes="300x225 480x360 800x600 960x720 1024x768 1600x1200" data-sizes-wide="132x74 380x214 522x293 778x437 942x530 1600x900" data-breakpoint="700" alt="LIBERIA-WAFRICA-HEALTH-EBOLA" />
+
+			
+		</div>
+
+		
+
+		
+	</div>
+
+
+							
+								<div class="gallery__text">
+									
+										<p class="gallery__caption">A woman is comforted after medical officials remove her husband, who is suspected of having the disease.</p>
+									
+								</div>
+							</script>
+						
+
+						
+					</li>
+					
+					<li class="gallery__item">
+						
+							<script type="text/template" class="gallery__image-template">
+							
+							<!-- 4:3 landscape -->
+							
+
+	
+	
+	
+	
+	
+		
+	
+	
+	
+		
+	 
+
+	<div class="image">
+		<div class="image__wrapper image__wrapper--4x3">
+			<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="image__item gallery__image js-responsive" data-template="http://media.skynews.com/media/images/generated/2014/10/5/340194/default/v0/456640976-1-{width}x{height}.jpg" data-sizes="300x225 480x360 800x600 960x720 1024x768 1600x1200" data-sizes-wide="132x74 380x214 522x293 778x437 942x530 1600x900" data-breakpoint="700" alt="LIBERIA-WAFRICA-HEALTH-EBOLA" />
+
+			
+		</div>
+
+		
+
+		
+	</div>
+
+
+							
+								<div class="gallery__text">
+									
+										<p class="gallery__caption">Officials try to prevent themselves from spreading the disease.</p>
+									
+								</div>
+							</script>
+						
+
+						
+					</li>
+					
+					<li class="gallery__item">
+						
+							<script type="text/template" class="gallery__image-template">
+							
+							<!-- 4:3 landscape -->
+							
+
+	
+	
+	
+	
+	
+		
+	
+	
+	
+		
+	 
+
+	<div class="image">
+		<div class="image__wrapper image__wrapper--4x3">
+			<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="image__item gallery__image js-responsive" data-template="http://media.skynews.com/media/images/generated/2014/10/5/340195/default/v0/456683856-1-{width}x{height}.jpg" data-sizes="300x225 480x360 800x600 960x720 1024x768 1600x1200" data-sizes-wide="132x74 380x214 522x293 778x437 942x530 1600x900" data-breakpoint="700" alt="HEALTH-EBOLA-WAFRICA-LIBERIA" />
+
+			
+		</div>
+
+		
+
+		
+	</div>
+
+
+							
+								<div class="gallery__text">
+									
+										<p class="gallery__caption">A local who has just brought his brother to the centre. He had to rely on plastic bags tied around his hands to try to protect himself.</p>
+									
+								</div>
+							</script>
+						
+
+						
+					</li>
+					
+					<li class="gallery__item">
+						
+							<script type="text/template" class="gallery__image-template">
+							
+							<!-- 4:3 landscape -->
+							
+
+	
+	
+	
+	
+	
+		
+	
+	
+	
+		
+	 
+
+	<div class="image">
+		<div class="image__wrapper image__wrapper--4x3">
+			<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="image__item gallery__image js-responsive" data-template="http://media.skynews.com/media/images/generated/2014/10/5/340196/default/v0/456682354-1-{width}x{height}.jpg" data-sizes="300x225 480x360 800x600 960x720 1024x768 1600x1200" data-sizes-wide="132x74 380x214 522x293 778x437 942x530 1600x900" data-breakpoint="700" alt="HEALTH-EBOLA-WAFRICA-LIBERIA" />
+
+			
+		</div>
+
+		
+
+		
+	</div>
+
+
+							
+								<div class="gallery__text">
+									
+										<p class="gallery__caption">A man thought to be infected with ebola waits for treatment.</p>
+									
+								</div>
+							</script>
+						
+
+						
+					</li>
+					
+					<li class="gallery__item">
+						
+							<script type="text/template" class="gallery__image-template">
+							
+							<!-- 4:3 landscape -->
+							
+
+	
+	
+	
+	
+	
+		
+	
+	
+	
+		
+	 
+
+	<div class="image">
+		<div class="image__wrapper image__wrapper--4x3">
+			<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="image__item gallery__image js-responsive" data-template="http://media.skynews.com/media/images/generated/2014/10/5/340197/default/v0/456685916-1-{width}x{height}.jpg" data-sizes="300x225 480x360 800x600 960x720 1024x768 1600x1200" data-sizes-wide="132x74 380x214 522x293 778x437 942x530 1600x900" data-breakpoint="700" alt="Liberia Races To Expand Ebola Treatment Facilities, As U.S. Troops Arrive" />
+
+			
+		</div>
+
+		
+
+		
+	</div>
+
+
+							
+								<div class="gallery__text">
+									
+										<p class="gallery__caption">Patients wait to be seen by medical staff.</p>
+									
+								</div>
+							</script>
+						
+
+						
+					</li>
+					
+					<li class="gallery__item">
+						
+							<script type="text/template" class="gallery__image-template">
+							
+							<!-- 4:3 landscape -->
+							
+
+	
+	
+	
+	
+	
+		
+	
+	
+	
+		
+	 
+
+	<div class="image">
+		<div class="image__wrapper image__wrapper--4x3">
+			<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="image__item gallery__image js-responsive" data-template="http://media.skynews.com/media/images/generated/2014/10/5/340198/default/v0/456685784-1-{width}x{height}.jpg" data-sizes="300x225 480x360 800x600 960x720 1024x768 1600x1200" data-sizes-wide="132x74 380x214 522x293 778x437 942x530 1600x900" data-breakpoint="700" alt="Liberia Races To Expand Ebola Treatment Facilities, As U.S. Troops Arrive" />
+
+			
+		</div>
+
+		
+
+		
+	</div>
+
+
+							
+								<div class="gallery__text">
+									
+										<p class="gallery__caption">Workers try to decontaminate themselves.</p>
+									
+								</div>
+							</script>
+						
+
+						
+					</li>
+					
+					<li class="gallery__item">
+						
+							<script type="text/template" class="gallery__image-template">
+							
+							<!-- 4:3 landscape -->
+							
+
+	
+	
+	
+	
+	
+		
+	
+	
+	
+		
+	 
+
+	<div class="image">
+		<div class="image__wrapper image__wrapper--4x3">
+			<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="image__item gallery__image js-responsive" data-template="http://media.skynews.com/media/images/generated/2014/10/5/340199/default/v0/456685810-1-{width}x{height}.jpg" data-sizes="300x225 480x360 800x600 960x720 1024x768 1600x1200" data-sizes-wide="132x74 380x214 522x293 778x437 942x530 1600x900" data-breakpoint="700" alt="Liberia Races To Expand Ebola Treatment Facilities, As U.S. Troops Arrive" />
+
+			
+		</div>
+
+		
+
+		
+	</div>
+
+
+							
+								<div class="gallery__text">
+									
+										<p class="gallery__caption">A worker with a child who may have caught Ebola.</p>
+									
+								</div>
+							</script>
+						
+
+						
+					</li>
+					
+					<li class="gallery__item">
+						
+							<script type="text/template" class="gallery__image-template">
+							
+							<!-- 4:3 landscape -->
+							
+
+	
+	
+	
+	
+	
+		
+	
+	
+	
+		
+	 
+
+	<div class="image">
+		<div class="image__wrapper image__wrapper--4x3">
+			<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="image__item gallery__image js-responsive" data-template="http://media.skynews.com/media/images/generated/2014/10/5/340200/default/v0/456693102-1-{width}x{height}.jpg" data-sizes="300x225 480x360 800x600 960x720 1024x768 1600x1200" data-sizes-wide="132x74 380x214 522x293 778x437 942x530 1600x900" data-breakpoint="700" alt="LIBERIA-WAFRICA-HEALTH-EBOLA" />
+
+			
+		</div>
+
+		
+
+		
+	</div>
+
+
+							
+								<div class="gallery__text">
+									
+										<p class="gallery__caption">A makeshift hand-washing station in Monrovia.</p>
+									
+								</div>
+							</script>
+						
+
+						
+					</li>
+					
+					<li class="gallery__item">
+						
+							<script type="text/template" class="gallery__image-template">
+							
+							<!-- 4:3 landscape -->
+							
+
+	
+	
+	
+	
+	
+		
+	
+	
+	
+		
+	 
+
+	<div class="image">
+		<div class="image__wrapper image__wrapper--4x3">
+			<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="image__item gallery__image js-responsive" data-template="http://media.skynews.com/media/images/generated/2014/10/5/340201/default/v0/456685976-1-{width}x{height}.jpg" data-sizes="300x225 480x360 800x600 960x720 1024x768 1600x1200" data-sizes-wide="132x74 380x214 522x293 778x437 942x530 1600x900" data-breakpoint="700" alt="Liberia Races To Expand Ebola Treatment Facilities, As U.S. Troops Arrive" />
+
+			
+		</div>
+
+		
+
+		
+	</div>
+
+
+							
+								<div class="gallery__text">
+									
+										<p class="gallery__caption">Decontaminated boots of medical staff.</p>
+									
+								</div>
+							</script>
+						
+
+						
+					</li>
+					
+					<li class="gallery__item gallery__item--last">
+						
+							<script type="text/template" class="gallery__image-template">
+							
+							<!-- 4:3 landscape -->
+							
+
+	
+	
+	
+	
+	
+		
+	
+	
+	
+		
+	 
+
+	<div class="image">
+		<div class="image__wrapper image__wrapper--4x3">
+			<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="image__item gallery__image js-responsive" data-template="http://media.skynews.com/media/images/generated/2014/10/5/340202/default/v0/456628628-1-{width}x{height}.jpg" data-sizes="300x225 480x360 800x600 960x720 1024x768 1600x1200" data-sizes-wide="132x74 380x214 522x293 778x437 942x530 1600x900" data-breakpoint="700" alt="Liberia Races To Expand Ebola Treatment Facilities, As U.S. Troops Arrive" />
+
+			
+		</div>
+
+		
+
+		
+	</div>
+
+
+							
+								<div class="gallery__text">
+									
+										<p class="gallery__caption">The basic conditions make containing the disease very difficult.</p>
+									
+								</div>
+							</script>
+						
+
+						
+					</li>
+					
+				</ol>
+			</div>
+
+			<div class="gallery__control-container" aria-hidden="true">
+				<div class="gallery__area gallery__area--left" data-direction="left">
+					<button class="gallery__control gallery__control--left skycon-chevron-left" data-direction="left"></button>
+				</div>
+
+				<div class="gallery__area gallery__area--right" data-direction="right">
+					<button class="gallery__control gallery__control--right skycon-chevron" data-direction="right"></button>
+				</div>
+			</div>
+
+			
+		</div>
+
+	
+
+	
+
+
+									
+								
+							
+								
+									
+										<p>"It is quite unavoidable ... that such incidents will happen in the future because of the extensive travel both from Europe to the affected countries and the other way around."</p>
+									
+								
+							
+								
+									
+										<p>Travel firms appear to have already suffered amid the outbreak, with shares in airline group IAG, owner of British Airways and Iberia, down 6.5%.</p>
+									
+								
+							
+								
+									
+										<p>Carnival Cruises are down 5.6%, Easyjet have fallen by 4.7% and Tui Travel by 3.2%.</p>
+									
+								
+							
+						
+					
+				</section>
+
+				
+
+<section class="partner-links">
+
+	<script type="text/template" class="outbrain__template--external">
+		<li class="partner-links__item partner-links__item--{counter} partner-links__item--{parity}">
+			<a href="{href}" class="partner-links__link">
+				<div class="image">
+					<div class="image__wrapper image__wrapper--4x3">
+						<img src="{image}" alt="" />
+					</div>
+				</div>
+				<span class="headline">{headline}</span>
+				<span class="partner-links__source">{source}</span>
+			</a>
+		</li>
+	</script>
+
+	<script type="text/template" class="outbrain__template--internal">
+		<li class="partner-links__item partner-links__item--{counter} partner-links__item--{parity}">
+			<a href="{href}" class="partner-links__link">
+				<div class="image">
+					<div class="image__wrapper image__wrapper--4x3">
+						<img src="{image}" alt="" />
+					</div>
+				</div>
+				<span class="headline">{headline}</span>
+			</a>
+		</li>
+	</script>
+
+	<div class="partner-links__external">
+		<h2 class="partner-links__title">Promoted Stories</h2>
+
+		<ul class="partner-links__list js-partner-links"></ul>
+	</div>
+
+	<div class="partner-links__internal">
+		<h2 class="partner-links__title">From Sky News</h2>
+
+		<ul class="partner-links__list partner-links__list--internal js-partner-links-internal"></ul>
+	</div>
+
+	<span class="partner-links__recommended js-show-recommended">
+		<a href="http://www.outbrain.com/what-is/default/en" class="partner-links__link partner-links__link--desktop" target="_blank">Recommended by <span class="partner-links__name">Outbrain</span></a>
+		<a href="http://blog.outbrain.com/whatismobilepage" class="partner-links__link partner-links__link--mobile" target="_blank">Recommended by <span class="partner-links__name">Outbrain</span></a>
+	</span>
+</section>
+
+				<section class="story__other" data-append="story__other"></section>
+			</div>
+
+			
+				
+	<p class="comment__nb">By posting a comment you are agreeing to abide by our <a href="http://www.sky.com/helpcentre/account-and-billing/terms-and-conditions/index.html">Terms &amp; Conditions</a>. See our <a href="/info/comments-faq">House Rules and FAQs</a>.</p>
+	
+	<div class="livecomments" id="livecomments-1348716"></div>
+	<script type="text/javascript" src="http://zor.livefyre.com/wjs/v3.0/javascripts/livefyre.js"></script>
+	<script type="text/javascript">
+		'use strict';
+
+		var getCookie = function (sKey) {
+				return decodeURIComponent(document.cookie.replace(new RegExp("(?:(?:^|.*;)\\s*" + encodeURIComponent(sKey).replace(/[\-\.\+\*]/g, "\\$&") + "\\s*\\=\\s*([^;]*).*$)|^.*$"), "$1")) || null;
+			},
+			
+			SSO_token = getCookie('skyCFsidlf01'),
+
+			networkConfig = {
+				network: 'bskyb.fyre.co',
+				authDelegate: new fyre.conv.RemoteAuthDelegate()
+			},
+			convConfig = {
+				siteId: '360818',
+				articleId: '1348716',
+				el: 'livecomments-1348716',
+				collectionMeta: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJodHRwOi8vbmV3cy5za3kuY29tL3N0b3J5LzEzNDg3MTYiLCJ0YWdzIjoiIiwidGl0bGUiOiJFYm9sYSBPdXRicmVhazogRG96ZW5zIE1vbml0b3JlZCBJbiBTcGFpbiIsImFydGljbGVJZCI6MTM0ODcxNiwidHlwZSI6ImxpdmVjb21tZW50cyJ9.fGwIwej79mPi8gvoc12LVsBMqhLXgc-Lnz9DTo7Z5bE'
+			};
+
+		networkConfig.authDelegate.login = function (delegate) {
+			if (SSO_token) {
+				fyre.conv.login(SSO_token);
+				delegate.success();
+			} else {
+				window.location.assign('https://skyid.sky.com/signin/news?successUrl=' + window.location.href);
+			}
+		};
+
+		networkConfig.authDelegate.logout = function (delegate) {
+			window.location.assign('https://skyid.sky.com/signout/news?successUrl=' + window.location.href);
+		};
+
+		fyre.conv.load(
+			networkConfig,
+			[convConfig],
+			function () {
+				if (SSO_token) {
+					fyre.conv.login(SSO_token);
+				}
+			}
+		);
+	</script>
+
+
+			
+
+			<!-- end "wide primary" wrapper -->
+		</div>
+		<!-- end "normal" wrapper -->
+
+		
+
+<section class="story__post-content">
+	
+	
+	
+
+<div class="ad ad--mpu" role="complementary" data-ad-type="mpu" aria-label="Advertisement"></div>
+
+
+	
+
+	
+	
+	
+	
+	
+		
+		<article class="top-stories">
+			
+				<h2 id="top-stories__title" class="top-stories__title">Top Stories</h2>
+			
+		    <ol class="top-stories__list" aria-labelledby="top-stories__title">
+		
+				
+				
+				<li class="top-stories__item top-stories__item--1 top-stories__item--odd">
+					
+
+	<a class="top-stories__link" href="/story/1369482/osborne-claims-real-win-over-1-7bn-eu-bill">
+
+		
+
+		 
+
+			
+
+	
+	
+	
+	
+	
+		
+	
+	
+	 
+
+	<div class="image">
+		<div class="image__wrapper image__wrapper--4x3">
+			<img src="http://media.skynews.com/media/images/generated/2014/11/8/348333/default/v1/10192567-1-1-91x68.jpg" class="image__item top-stories__image js-responsive" data-template="http://media.skynews.com/media/images/generated/2014/11/8/348333/default/v1/10192567-1-1-{width}x{height}.jpg" data-sizes="91x68 300x225 480x360" data-sizes-wide="144x81 362x204 762x428 942x530 1600x900" data-breakpoint="210" alt="" />
+
+			
+		</div>
+
+		
+
+		
+	</div>
+
+			
+		
+
+		
+		
+	<span class="headline headline--normal headline--top-stories">Osborne Claims &#39;Real Win&#39; Over £1.7bn EU Bill</span>
+
+				
+	</a>
+
+
+					
+				</li>
+		
+	
+		
+				
+				
+				<li class="top-stories__item top-stories__item--2 top-stories__item--even">
+					
+
+	<a class="top-stories__link" href="/story/1369341/call-for-probe-into-cannibal-killers-release">
+
+		
+
+		 
+
+			
+
+	
+	
+	
+	
+	
+		
+	
+	
+	 
+
+	<div class="image">
+		<div class="image__wrapper image__wrapper--4x3">
+			<img src="http://media.skynews.com/media/images/generated/2014/11/7/348055/default/v1/adaptive-comp-template-two-way-1-91x68.jpg" class="image__item top-stories__image js-responsive" data-template="http://media.skynews.com/media/images/generated/2014/11/7/348055/default/v1/adaptive-comp-template-two-way-1-{width}x{height}.jpg" data-sizes="91x68 300x225 480x360" data-sizes-wide="144x81 362x204 762x428 942x530 1600x900" data-breakpoint="210" alt="" />
+
+			
+		</div>
+
+		
+
+		
+	</div>
+
+			
+		
+
+		
+		
+	<span class="headline headline--normal headline--top-stories">Call For Probe Into &#39;Cannibal&#39; Killer&#39;s Release</span>
+
+				
+	</a>
+
+
+					
+				</li>
+		
+	
+		
+				
+				
+				<li class="top-stories__item top-stories__item--3 top-stories__item--odd">
+					
+
+	<a class="top-stories__link" href="/story/1368910/police-question-uk-islamist-plot-suspects">
+
+		
+
+		 
+
+			
+
+	
+	
+	
+	
+	
+		
+	
+	
+	 
+
+	<div class="image">
+		<div class="image__wrapper image__wrapper--4x3">
+			<img src="http://media.skynews.com/media/images/generated/2014/11/8/348275/default/v1/terror-arrests-1-91x68.jpg" class="image__item top-stories__image js-responsive" data-template="http://media.skynews.com/media/images/generated/2014/11/8/348275/default/v1/terror-arrests-1-{width}x{height}.jpg" data-sizes="91x68 300x225 480x360" data-sizes-wide="144x81 362x204 762x428 942x530 1600x900" data-breakpoint="210" alt="" />
+
+			
+		</div>
+
+		
+
+		
+	</div>
+
+			
+		
+
+		
+		
+	<span class="headline headline--normal headline--top-stories">Police Question UK &#39;Islamist Plot&#39; Suspects</span>
+
+				
+	</a>
+
+
+					
+				</li>
+		
+	
+		
+				
+				
+				<li class="top-stories__item top-stories__item--4 top-stories__item--even">
+					
+
+	<a class="top-stories__link" href="/story/1369598/liberty-baker-death-teen-boy-faces-charges">
+
+		
+
+		 
+
+			
+
+	
+	
+	
+	
+	
+		
+	
+	
+	 
+
+	<div class="image">
+		<div class="image__wrapper image__wrapper--4x3">
+			<img src="http://media.skynews.com/media/images/generated/2014/11/8/348360/default/v1/facebook-1-91x68.jpg" class="image__item top-stories__image js-responsive" data-template="http://media.skynews.com/media/images/generated/2014/11/8/348360/default/v1/facebook-1-{width}x{height}.jpg" data-sizes="91x68 300x225 480x360" data-sizes-wide="144x81 362x204 762x428 942x530 1600x900" data-breakpoint="210" alt="" />
+
+			
+		</div>
+
+		
+
+		
+	</div>
+
+			
+		
+
+		
+		
+	<span class="headline headline--normal headline--top-stories">Teenager Charged Over Collision Death Of Girl</span>
+
+				
+	</a>
+
+
+					
+				</li>
+		
+	
+		
+				
+				
+				<li class="top-stories__item top-stories__item--5 top-stories__item--odd top-stories__item--last">
+					
+
+	<a class="top-stories__link" href="/story/1369633/police-probe-fatal-shooting-of-israeli-arab">
+
+		
+
+		 
+
+			
+
+	
+	
+	
+	
+	
+		
+	
+	
+	 
+
+	<div class="image">
+		<div class="image__wrapper image__wrapper--4x3">
+			<img src="http://media.skynews.com/media/images/generated/2014/11/8/348370/default/v0/cegrab-20141108-164312-407-1-91x68.jpg" class="image__item top-stories__image js-responsive" data-template="http://media.skynews.com/media/images/generated/2014/11/8/348370/default/v0/cegrab-20141108-164312-407-1-{width}x{height}.jpg" data-sizes="91x68 300x225 480x360" data-sizes-wide="144x81 362x204 762x428 942x530 1600x900" data-breakpoint="210" alt="" />
+
+			
+		</div>
+
+		
+
+		
+	</div>
+
+			
+		
+
+		
+		
+	<span class="headline headline--normal headline--top-stories">Police Probe Fatal Shooting Of Israeli Arab</span>
+
+				
+	</a>
+
+
+					
+				</li>
+		
+			</ol>
+		</article>
+		
+	
+
+
+	
+<div class="promo-watchlive js-promo-watchlive" data-src="/images/de8279f1.promo-watchlive-600x1000.jpg" data-alt="Sky promo watch live"></div>
+
+</section>
+
+	</article>
+
+	<section class="other" data-append="story__other"></section>
+
+</div>
+
+
+
+		<footer class="js-footer footer" role="contentinfo">
+
+	<div class="footer__columns">
+
+		<div class="js-footer__section footer__section footer__section--first">
+			<h2 class="footer__heading"><span class="footer__heading-text">About Sky News</span><i class="skycon-chevron-down footer__heading--icon" aria-hidden="true"></i></h2>
+			<div class="footer__list-wrapper">
+				<ul class="footer__list">
+					<li class="footer__item"><a class="footer__link" href="http://skynews.skypressoffice.co.uk/about">About Us</a></li>
+					<li class="footer__item"><a class="footer__link" href="http://www.skynewsinternational.com">Sky News International</a></li>
+					<li class="footer__item"><a class="footer__link" href="/info/library-sales">Sky News Library Sales</a></li>
+					<li class="footer__item"><a class="footer__link" href="/info/sitemap">Site Map</a></li>
+					<li class="footer__item footer__item--last"><a class="footer__link" href="/docs/sky_news_editorial_guidelines.pdf">Editorial Guidelines</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="js-footer__section footer__section">
+			<h2 class="footer__heading"><span class="footer__heading-text">Sky News Services</span><i class="skycon-chevron-down footer__heading--icon" aria-hidden="true"></i></h2>
+			<div class="footer__list-wrapper">
+				<ul class="footer__list">
+					<li class="footer__item"><a class="footer__link" href="http://devices.news.sky.com/">Sky News for iPad</a></li>
+					<li class="footer__item"><a class="footer__link" href="/info/rss">Sky News RSS</a></li>
+					<li class="footer__item"><a class="footer__link" href="/info/smartphones">Sky News for Smartphones</a></li>
+					<li class="footer__item footer__item--last"><a class="footer__link" href="/info/radio">Sky News Radio</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="js-footer__section footer__section">
+			<h2 class="footer__heading"><span class="footer__heading-text">Sky Channels</span><i class="skycon-chevron-down footer__heading--icon" aria-hidden="true"></i></h2>
+			<div class="footer__list-wrapper">
+				<ul class="footer__list">
+					<li class="footer__item"><a class="footer__link" href="http://www.sky.com/tv/channel/sky1">Sky 1</a></li>
+					<li class="footer__item"><a class="footer__link" href="http://www.sky.com/tv/channel/skyliving">Sky Living</a></li>
+					<li class="footer__item"><a class="footer__link" href="http://www.sky.com/tv/channel/skyatlantic">Sky Atlantic</a></li>
+					<li class="footer__item"><a class="footer__link" href="http://www.sky.com/tv/channel/skyarts">Sky Arts</a></li>
+					<li class="footer__item"><a class="footer__link" href="http://skymovies.sky.com">Sky Movies</a></li>
+					<li class="footer__item"><a class="footer__link" href="http://www.sky.com/tv/channel/sky3d">Sky 3D</a></li>
+					<li class="footer__item footer__item--last"><a class="footer__link" href="http://www.skysports.com">Sky Sports</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="js-footer__section footer__section footer__section--last">
+			<h2 class="footer__heading"><span class="footer__heading-text">More Sky Sites</span><i class="skycon-chevron-down footer__heading--icon" aria-hidden="true"></i></h2>
+			<div class="footer__list-wrapper">
+				<ul class="footer__list">
+					<li class="footer__item"><a class="footer__link" href="http://www.nowtv.com">NOWTV</a></li>
+					<li class="footer__item"><a class="footer__link" href="http://corporate.sky.com/the_bigger_picture">The Bigger Picture</a></li>
+					<li class="footer__item"><a class="footer__link" href="http://www.goskyride.com">Sky Ride</a></li>
+					<li class="footer__item"><a class="footer__link" href="http://www.sky.com/tv/show/futures-fund">Sky Arts Ignition</a></li>
+					<li class="footer__item"><a class="footer__link" href="http://corporate.sky.com/">Sky Corporate</a></li>
+					<li class="footer__item"><a class="footer__link" href="http://www.skybet.com">Sky Bet</a></li>
+					<li class="footer__item"><a class="footer__link" href="http://www.sky.com">Sky.com</a></li>
+					<li class="footer__item footer__item--last"><a class="footer__link" href="http://www.skynewsarabia.com">Sky News Arabia</a></li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="sub-footer">
+		<ul class="sub-footer__list">
+			<li class="sub-footer__item sub-footer__item--first"><a href="http://help.sky.com/my-account/terms-and-conditions/skycom-terms-and-conditions/" class="sub-footer__link">Terms &amp; Conditions</a></li>
+			<li class="sub-footer__item"><a href="http://help.sky.com/security/privacy/privacy-and-cookies-notice" class="sub-footer__link">Privacy &amp; Cookies Notice</a></li>
+			<li class="sub-footer__item"><a href="http://accessibility.sky.com/" class="sub-footer__link">Accessibility Information</a></li>
+			<li class="sub-footer__item sub-footer__item--last"><a href="/info/contact-us" class="sub-footer__link">Contact Us</a></li>
+		</ul>
+
+		<p class="footer__copyright"><i class="footer__sky-logo skycon skycon-sky"></i> &copy; 2014 BSkyB</p>
+	</div>
+</footer>
+
+	</div>
+
+	<script data-main="/scripts/c2c4e711.optimized" src="/scripts/10d86eb6.require.min.js"></script>
+	<script type="text/javascript">
+		var _sf_async_config={},
+			_comscore = _comscore || [];
+  
+		_comscore.push({ c1: "2", c2: "6035677" });
+		
+		_sf_async_config.uid = "34974";
+		_sf_async_config.domain = "news.sky.com"; /** CHANGE THIS **/
+		_sf_async_config.useCanonical = true;
+		
+		(function(){
+			function loadChartbeat() {
+				window._sf_endpt=(new Date()).getTime();
+				var e = document.createElement("script");
+				e.setAttribute("language", "javascript");
+				e.setAttribute("type", "text/javascript");
+				e.setAttribute('src', '//static.chartbeat.com/js/chartbeat.js');
+				document.body.appendChild(e);
+			}
+
+			function loadComscore() {
+				var s = document.createElement("script"),
+					el = document.getElementsByTagName("script")[0];
+
+				s.async = true;
+				s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+				el.parentNode.insertBefore(s, el);
+			}
+
+			function loadScripts() {
+				loadChartbeat();
+				loadComscore();
+			}
+
+			var oldonload = window.onload;
+			window.onload = (typeof window.onload != "function") ? loadScripts : function() { oldonload(); loadScripts(); };
+		})();
+	</script>
+
+	<noscript>
+		<img src="http://b.scorecardresearch.com/p?c1=2&c2=6035677&cv=2.0&cj=1" />
+	</noscript>
+
+	<link rel="stylesheet" href="/styles/b65454ca.livefyre.css">
+	<!-- START AUDIENCE SCIENCE PIXELLING CODE -->
+     <script src="http://js.revsci.net/gateway/gw.js?csid=G07611"></script>
+     <script type="text/javascript">DM_tag();</script>
+	<!-- END AUDIENCE SCIENCE PIXELLING CODE -->
+</body>
+</html>
