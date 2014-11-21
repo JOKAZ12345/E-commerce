@@ -339,7 +339,7 @@ while i < 5:
         randomDocs.append(randNumber)
         i += 1
 
-d = dictAllDocs(dic_key[randomDocs[0]])
+# get lexico from each document
 i = 1
 max = 0
 doc = 0
