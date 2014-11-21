@@ -3,6 +3,7 @@ from ex2 import cosine
 
 __author__ = 'Jorge Cruz' + 'Adrien Aguado'
 
+import json
 import urllib
 import urllib2
 import cookielib
@@ -298,8 +299,12 @@ space_vectors = []
 
 # GETS THE SPACE VECTORS FOR EACH DOCUMENT ACCORDING TO THE LEXICON
 i = 0
-while i < 2:
+while i < 100:
+
+    print 'vector: ' + str(i)
     dic_A = dictAllDocs[dic_key[i]]  # dic contains our vector space model already sorted
+
+    f = open('vectors/' + str(i), 'w')
 
     words_A = []
 
@@ -319,6 +324,9 @@ while i < 2:
 
     space_vectors.append(space_vector)
     i += 1
+
+    json.dump(space_vector, f)
+    f.close()
 
 u = space_vectors[0]
 v = space_vectors[1]
