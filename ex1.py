@@ -325,11 +325,13 @@ max = 0
 doc = 0
 
 while i < 100:
-    #if i not in randomDocs:
+    if i not in randomDocs:
         cos = cosine(u, space_vectors[i])
 
         similar_docs[i] = cos
 
+        i += 1
+    else:
         i += 1
 
 maxAux = sorted(similar_docs.items(), key=itemgetter(1), reverse=True)
