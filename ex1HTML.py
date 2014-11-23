@@ -1,6 +1,9 @@
+# coding=utf-8
 __author__ = 'JOKAZ'
 
-from ex1 import *
+import BeautifulSoup
+import urllib2
+
 
 # Replaces the entity characters (not sure if we will ever need but..)
 def ReplaceEntityNamesByCharacter(string):
@@ -39,6 +42,7 @@ def ReplaceEntityNamesByCharacter(string):
         i += 1
 
     return string
+
 
 # Downloads each page and saves it in a file
 def downloadpages(pages):
@@ -84,6 +88,7 @@ def parseGoogle(soup):
         sLink = li.find('a')  # gets the <a> atg
         a.append(sLink['href'])  # saves it
     return a
+
 
 # This function just checks if it can find the headers of each page with BeautifulSoup
 def checkSoupHeaders(soup, i):

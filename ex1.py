@@ -1,5 +1,4 @@
 # coding=utf-8
-from ex2 import *
 from ex1HTML import *
 
 __author__ = 'Jorge Cruz' + 'Adrien Aguado'
@@ -14,6 +13,7 @@ import BeautifulSoup
 import numpy
 from nltk.corpus import stopwords
 from operator import itemgetter
+from operator import add
 import scipy.spatial.distance
 import nltk
 #import gensim
@@ -88,10 +88,6 @@ def countWords():
                     else:  # doesn't exist so add's it
                         dict_words[char] = 1
                         addKeyToAllWords(char)
-
-                    #  ADDED TO EXERCISE 2
-                    #if char not in lexicon:
-                        #lexicon.append(char)
 
         # ADDED THIS CODE TO SORT THE ARRAY BEFORE USING IT ON EXERCISE 2
         dict_words = sorted(dict_words.items(), key=itemgetter(1), reverse=True)  # and we have all how many times the words repeat themselves
@@ -192,36 +188,104 @@ _s = sorted(dictAllWords.items(), key=itemgetter(1), reverse=True)  # and we hav
 dic_key = dictAllDocs.keys()
 lexicon = dictAllWords.keys()
 
+
+def readSpaceVectorsFromFile():
+    i = 0
+    space_vectors = []
+    while i < 100:
+        f = open('vectors/' + str(i), 'r')
+
+        space_vectors.append(json.load(f))
+
+        f.close()
+
+        i += 1
+
+    return space_vectors
+
+
+def createSpaceVectors():
+    i = 0
+    space_vectors = []
+    while i < 100:
+        dic_A = dictAllDocs[dic_key[i]]
+
+        f = open('vectors/' + str(i), 'w')
+
+        words_A = []
+
+        for word in dic_A:
+            words_A.append(word[0])
+
+        # bzero the space vector
+        space_vector = [0] * len(lexicon)
+
+        z = 0
+        while z < len(lexicon):
+            word = lexicon[z]
+            if word in words_A:
+                space_vector[z] = find_tupple(dic_A, word)
+
+            z += 1
+
+        space_vectors.append(space_vector)
+        i += 1
+
+        json.dump(space_vector, f)
+        f.close()
+
+    return space_vectors
+
+
+# Calculates the cosine between two documents
+def cosine(doc_1, doc_2):
+    tam = len(doc_1)
+    # Calculates first the product between vectors
+    i = 0
+    sum = 0
+    while i < tam:
+        values = (doc_1[i] * doc_2[i])
+        sum += values
+        i += 1
+
+    # Calculates here the |doc_1|
+    i = 0
+    sum_2 = 0
+    while i < tam:
+        values = doc_1[i] * doc_1[i]
+        sum_2 += values
+        i += 1
+
+    res_1 = sum_2 ** 0.5
+
+    # Calculates here the |doc_2|
+    i = 0
+    sum_3 = 0
+    while i < tam:
+        values = doc_2[i] * doc_2[i]
+        sum_3 += values
+        i += 1
+
+    res_2 = sum_3 ** 0.5  # pow
+
+    if res_1 == 0:
+        return 0
+
+    if res_2 == 0:
+        return 0
+
+    cosine = sum / (res_1 * res_2)
+
+    return cosine
+
 space_vectors = []
 
+
 # GETS THE SPACE VECTORS FOR EACH DOCUMENT ACCORDING TO THE LEXICON
-i = 0
-while i < 100:
-    dic_A = dictAllDocs[dic_key[i]]
-
-    f = open('vectors/' + str(i), 'w')
-
-    words_A = []
-
-    for word in dic_A:
-        words_A.append(word[0])
-
-    # bzero the space vector
-    space_vector = [0] * len(lexicon)
-
-    z = 0
-    while z < len(lexicon):
-        word = lexicon[z]
-        if word in words_A:
-            space_vector[z] = find_tupple(dic_A, word)
-
-        z += 1
-
-    space_vectors.append(space_vector)
-    i += 1
-
-    json.dump(space_vector, f)
-    f.close()
+if debug == 0:
+    space_vectors = createSpaceVectors()
+else:
+    space_vectors = readSpaceVectorsFromFile()
 
 u = space_vectors[0]
 v = space_vectors[1]
@@ -229,24 +293,44 @@ cos = cosine(u, v)  # example.. this calculates the similarity between doc_1 and
 similar_docs = {}
 randomDocs = []
 
+
+# CHOOSES HERE 5 RANDOM DOCUMENTS AND THEN GENERATES SUGGESTIONS
 i = 0
+lex = []
 while i < 5:
     randNumber = randint(0, 99)
     if randNumber not in randomDocs:
+        print 'rand=' + str(randNumber)
         randomDocs.append(randNumber)
+
+        #lexDoc = dictAllDocs[tosave.replace('%d', str(randNumber))]
+        #lex.append(lexDoc)
         i += 1
 
-# get lexico from each document
+# Sum the space vectors of each document
+# It's code prettier using numpy to sum the vectors instead of summing each element by each element
+a = numpy.array(space_vectors[randomDocs[0]])
+b = numpy.array(space_vectors[randomDocs[1]])
+c = numpy.array(space_vectors[randomDocs[2]])
+d = numpy.array(space_vectors[randomDocs[3]])
+e = numpy.array(space_vectors[randomDocs[4]])
+
+sum = a + b + c + d + e
+u = sum.tolist()
+
+
+
 i = 1
 max = 0
 doc = 0
 
 while i < 100:
-    cos = cosine(u, space_vectors[i])
+    #if i not in randomDocs:
+        cos = cosine(u, space_vectors[i])
 
-    similar_docs[i] = cos
+        similar_docs[i] = cos
 
-    i += 1
+        i += 1
 
 maxAux = sorted(similar_docs.items(), key=itemgetter(1), reverse=True)
 
