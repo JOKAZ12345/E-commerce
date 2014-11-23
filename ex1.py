@@ -1,11 +1,11 @@
 # coding=utf-8
 from ex1HTML import *
 
+#<---- To check the exercise 2 and 2bis start reading from line n. 187 ----->
+
 __author__ = 'Jorge Cruz' + 'Adrien Aguado'
 
 import json
-import urllib
-import urllib2
 import cookielib
 import re
 import lxml.html
@@ -13,11 +13,10 @@ import BeautifulSoup
 import numpy
 from nltk.corpus import stopwords
 from operator import itemgetter
-from operator import add
 import scipy.spatial.distance
-import nltk
-#import gensim
 from random import randint
+from gensim import corpora, models
+from gensim.models import ldamodel
 
 google_s = 'google_search.html'
 
@@ -185,6 +184,8 @@ countWords()  # Reads the words from /results/..
 _s = sorted(dictAllWords.items(), key=itemgetter(1), reverse=True)  # and we have all how many times the words repeat themselves
 # dictAllWord has ours Vectors Space Models
 
+#<-----------------------------EXERCISE 2 AND 2BIS------------------------>
+
 dic_key = dictAllDocs.keys()
 lexicon = dictAllWords.keys()
 
@@ -280,7 +281,6 @@ def cosine(doc_1, doc_2):
 
 space_vectors = []
 
-
 # GETS THE SPACE VECTORS FOR EACH DOCUMENT ACCORDING TO THE LEXICON
 if debug == 0:
     space_vectors = createSpaceVectors()
@@ -302,9 +302,6 @@ while i < 5:
     if randNumber not in randomDocs:
         print 'rand=' + str(randNumber)
         randomDocs.append(randNumber)
-
-        #lexDoc = dictAllDocs[tosave.replace('%d', str(randNumber))]
-        #lex.append(lexDoc)
         i += 1
 
 # Sum the space vectors of each document
@@ -318,18 +315,14 @@ e = numpy.array(space_vectors[randomDocs[4]])
 sum = a + b + c + d + e
 u = sum.tolist()
 
-
-
 i = 1
 max = 0
 doc = 0
 
-while i < 100:
+while i < 0:
     if i not in randomDocs:
         cos = cosine(u, space_vectors[i])
-
         similar_docs[i] = cos
-
         i += 1
     else:
         i += 1
@@ -337,7 +330,6 @@ while i < 100:
 maxAux = sorted(similar_docs.items(), key=itemgetter(1), reverse=True)
 
 i = 0
-
 for item in maxAux:
     if i >= 5:
         break
@@ -349,9 +341,79 @@ d = scipy.spatial.distance.cityblock(u, v)
 d2 = scipy.spatial.distance.euclidean(u, v)
 correlation = scipy.spatial.distance.correlation(u, v)
 
+#Remove documents with less than 10 terms/words
+def cleanUnecessaryDocs():
+    for k in dic_key:
+        if len(dictAllDocs[k]) < 10:
+            dictAllDocs.pop(k)
+
+cleanUnecessaryDocs()
+
+def generateTopics():
+    #Create an array of words of each document
+    doc_words = []
+    i = 0
+    for key in dictAllDocs.keys():
+        arr_aux = []
+        for word in dictAllDocs[key]:
+            arr_aux.append(word[0])
+        doc_words.append(arr_aux)
+
+    #Creates a dictionary giving an id for each word
+    dictionary = corpora.Dictionary(doc_words)
+
+    #Creates the corpus
+    corpus = [dictionary.doc2bow(text) for text in doc_words]
+
+    #Saves the corpus
+    corpora.MmCorpus.serialize('corpus.mm', corpus)
+
+    #Load the corpus
+    corpus = corpora.MmCorpus('corpus.mm')
+
+    #Initializes yfidf Model
+    tfidf = models.TfidfModel(corpus)
+
+    #Convert the old corpus representation(bag-of-words) to the new representation (TfIdf real-valued weights)
+    corpus_tfidf = tfidf[corpus]
+
+    #Initialize LSI Transformation
+    lsi = models.LsiModel(corpus_tfidf, num_topics=93, id2word=dictionary)
+
+    #Print the topics using LSI
+    print "\nPrinting topics using LSI:"
+    i = 0
+    w2 = []
+    for topic in lsi.show_topics(num_topics=93):
+        #print "Topic " + str(i) + " : " + topic
+
+        words = []
+        ww = (topic.split("\""))
+        j = 0
+        for w in ww:
+            if j % 2:
+                words.append(w)
+            j += 1
+
+        w2.append(words)
+        i += 1
+
+    #Initialize LDA transformation
+    lda = models.ldamodel.LdaModel(corpus, num_topics=93)
+
+    # print the topics using LDA
+    print "\nPrinting topics using LDA:"
+    i = 0
+    for topic in lda.show_topics(num_topics=93, formatted=False):
+        i += 1
+        print "Topic #" + str(i) + ":",
+        for p, id in topic:
+            print(dictionary[int(id)]),
+
+        print ""
+
+generateTopics()
 #printAllWordValues(dictAllDocs)  # print all words and their own values
 #printAllDocWordValues(dictAllDocs)  # print all words for each document and their own values
 #printDictionary(_s)  # Prints the sorted results to a .txt file (CHECK THE FUNCTION FOR MORE DETAILS)
-
 print 'finished'
-
