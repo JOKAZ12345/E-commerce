@@ -1,5 +1,7 @@
 __author__ = 'JOKAZ'
 
+from ex1 import *
+
 # Calculates the cosine between two documents
 def cosine(doc_1, doc_2):
     tam = len(doc_1)
