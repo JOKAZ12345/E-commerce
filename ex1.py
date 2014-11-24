@@ -380,88 +380,89 @@ def getDocumentNameByIndex(index):
 
     return -1  # never reaches here (aka paranoid code)
 
-# CHOOSES HERE 5 RANDOM DOCUMENTS AND THEN GENERATES SUGGESTIONS
-i = 0
-sum_numpy = 0
-vector = []
-random = 0  # change to 0/1 (false/true) if you are working with random or not (CHANGE THIS TO DO THE EX2 WARMUP TO 1 AND TO 0 FOR 2BIS)
+# PUT THIS VARIABLE TO 0 TO CALCULATE THE COSSINES AND ETC
+just_LSI_LDA = 1
 
-print '--SIMILAR DOCS BETWEEN THEM--'
-while i < 5:
-    if random == 1:
-        randNumber = randint(0, len(dictAllDocs))
-        if randNumber not in randomDocs:
-            print 'rand=' + str(randNumber)
-            randomDocs.append(randNumber)
-            vector.append(randNumber)
-            sum_numpy += numpy.array(space_vectors[randNumber])  # sum's here all the vectors using numpy to be faster/elegant
-            print getDocumentNameByIndex(randNumber)
+if just_LSI_LDA == 0:
+    # CHOOSES HERE 5 RANDOM DOCUMENTS AND THEN GENERATES SUGGESTIONS
+    i = 5  # put this at 5 for cold start
+    sum_numpy = 0
+    vector = []
+    random = 0  # change to 0/1 (false/true) if you are working with random or not (CHANGE THIS TO DO THE EX2 WARMUP TO 1 AND TO 0 FOR 2BIS)
 
-    else:
-        vector = [43, 74, 0, 62, 32] # change here your random documents extract earlier for warmstart
-        sum_numpy += numpy.array(space_vectors[vector[i]])
-        print getDocumentNameByIndex(vector[i])
+    print '--SIMILAR DOCS BETWEEN THEM--'
+    while i < 5:  # we just want 5 documents tra di loro
+        if random == 1:
+            randNumber = randint(0, len(dictAllDocs))
+            if randNumber not in randomDocs:
+                print 'rand=' + str(randNumber)
+                randomDocs.append(randNumber)
+                vector.append(randNumber)
+                sum_numpy += numpy.array(space_vectors[randNumber])  # sum's here all the vectors using numpy to be faster/elegant
+                print getDocumentNameByIndex(randNumber)
 
-    i += 1
+        else:
+            vector = [43, 74, 0, 62, 32] # change here your random documents extract earlier for warmstart
+            sum_numpy += numpy.array(space_vectors[vector[i]])
+            print getDocumentNameByIndex(vector[i])
 
-u = sum_numpy.tolist()# --- UNCOMENT THIS FOR NUMPY
-#u = space_vectors[0]  # I CHOOSE THE FIRST DOCUMENT IN THE DICTIONARY
+        i += 1
 
-similar_docs_scipy = {}
+    # MAKE SURE TO COMMENT ONE OF THIS DEPENDING WHICH YOU WANT TO CALCULATE
+    #u = sum_numpy.tolist()# --- UNCOMENT THIS FOR WARMSTART
+    u = space_vectors[0]  # I CHOOSE THE FIRST DOCUMENT IN THE DICTIONARY FOR THE COLD START
 
-time_our = 0
-time_scipy = 0
+    similar_docs_scipy = {}
+    time_our = 0
+    time_scipy = 0
 
-i = 0 # PUT THIS AT 0 FOR NUMPY
-while i < len(dictAllDocs):
-    if i not in randomDocs:  # if we are not in the document calculate it's cosine
-        if i not in vector:
-            # COMMENT THIS LINES AT A TIME TO DO FIRST THE EXERCISE 2 AND THEN 2 BIS
-            #timeit.timeit(cosine(u, space_vectors[i]))  # computes the cosine (EXERCISE 2)
-            #timeit.timeit(1 - scipy.spatial.distance.cosine(u, space_vectors[i]))  # computes the cosine using scipy (EXERCISE 2 BIS)
+    print '--SIMILAR DOCS FOR ' + getDocumentNameByIndex(0) + '--'
+    i = 1 # PUT THIS AT 0 FOR WARM START AND 1 FOR COLD START [UNCOMENT TIMERS IF YOU WANT TO USE]
+    while i < len(dictAllDocs):
+        if i not in randomDocs:  # if we are not in the document calculate it's cosine
+            if i not in vector:
+                #t = Timer(lambda: cosine(u, space_vectors[i]))
+                similar_docs[i] = cosine(u, space_vectors[i])
 
-            t = Timer(lambda: cosine(u, space_vectors[i]))
-            similar_docs[i] = cosine(u, space_vectors[i])
+                #t2 = Timer(lambda: 1 - scipy.spatial.distance.cosine(u, space_vectors[i]))
+                similar_docs_scipy[i] = 1 - scipy.spatial.distance.cosine(u, space_vectors[i])
 
-            t2 = Timer(lambda: 1 - scipy.spatial.distance.cosine(u, space_vectors[i]))
-            similar_docs_scipy[i] = 1 - scipy.spatial.distance.cosine(u, space_vectors[i])
+                #time_our += t.timeit(number=1)
+                #time_scipy += t2.timeit(number=1)
+        i += 1
 
-            time_our += t.timeit(number=1)
-            time_scipy += t2.timeit(number=1)
-    i += 1
+    print 'OUR COSSINE TOOK: ' + str(time_our)
+    print 'SCIPY TOOK: ' + str(time_scipy)
 
-print 'OUR COSSINE TOOK: ' + str(time_our)
-print 'SCIPY TOOK: ' + str(time_scipy)
+    #  REMOVE HERE POSSIBLE NaN's
+    keys = similar_docs_scipy.keys()
+    for key in keys:
+        if math.isnan(similar_docs_scipy[key]):
+            similar_docs_scipy.pop(key)
 
-#  REMOVE HERE POSSIBLE NaN's
-keys = similar_docs_scipy.keys()
-for key in keys:
-    if math.isnan(similar_docs_scipy[key]):
-        similar_docs_scipy.pop(key)
+    maxAux = sorted(similar_docs.items(), key=itemgetter(1), reverse=True)  # sort the array by desc
+    maxscipy = sorted(similar_docs_scipy.items(), key=itemgetter(1), reverse=True)
 
-maxAux = sorted(similar_docs.items(), key=itemgetter(1), reverse=True)  # sort the array by desc
-maxscipy = sorted(similar_docs_scipy.items(), key=itemgetter(1), reverse=True)
+    i = 0
+    print 'OUR COSSINE FUNCTION'
+    for item in maxAux:
+        if i >= 5:  # we just choose to display the top5 matches
+            break
+        print "Doc " + getDocumentNameByIndex(item[0]) + " - cos " + str(item[1])
+        i += 1
 
-i = 0
-print 'OUR COSSINE FUNCTION'
-for item in maxAux:
-    if i >= 5:  # we just choose to display the top5 matches
-        break
-    print "Doc " + getDocumentNameByIndex(item[0]) + " - cos " + str(item[1])
-    i += 1
+    i = 0
+    print 'SCIPY COSSINE FUNCTION'
+    for item in maxscipy:
+        if i >= 5:  # we just choose to display the top5 matches
+            break
+        print "Doc " + getDocumentNameByIndex(item[0]) + " - cos " + str(item[1])
+        i += 1
 
-i = 0
-print 'SCIPY COSSINE FUNCTION'
-for item in maxscipy:
-    if i >= 5:  # we just choose to display the top5 matches
-        break
-    print "Doc " + getDocumentNameByIndex(item[0]) + " - cos " + str(item[1])
-    i += 1
-
-#cos2 = 1 - scipy.spatial.distance.cosine(u, v)
-#d = scipy.spatial.distance.cityblock(u, v)
-#d2 = scipy.spatial.distance.euclidean(u, v)
-#correlation = scipy.spatial.distance.correlation(u, v)
+    #cos2 = 1 - scipy.spatial.distance.cosine(u, v)
+    #d = scipy.spatial.distance.cityblock(u, v)
+    #d2 = scipy.spatial.distance.euclidean(u, v)
+    #correlation = scipy.spatial.distance.correlation(u, v)
 
 
 def generateTopics():
@@ -486,7 +487,7 @@ def generateTopics():
     #Load the corpus
     corpus = corpora.MmCorpus('corpus.mm')
 
-    #Initializes yfidf Model
+    #Initializes tfidf Model
     tfidf = models.TfidfModel(corpus)
 
     #Convert the old corpus representation(bag-of-words) to the new representation (TfIdf real-valued weights)
@@ -500,8 +501,6 @@ def generateTopics():
     i = 0
     w2 = []
     for topic in lsi.show_topics(num_topics=93):
-        #print "Topic " + str(i) + " : " + topic
-
         words = []
         ww = (topic.split("\""))
         j = 0
@@ -511,6 +510,12 @@ def generateTopics():
             j += 1
 
         w2.append(words)
+
+        print "Topic #" + str(i) + ":",
+        for p in w2[i]:
+            print p,
+
+        print ""
         i += 1
 
     #Initialize LDA transformation
