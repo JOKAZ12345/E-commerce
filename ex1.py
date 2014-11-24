@@ -199,7 +199,7 @@ lexicon = dictAllWords.keys()
 cleanUnecessaryDocs()
 dic_key = dictAllDocs.keys()
 
-mr_tf = 0
+mr_tf = 0  # put this to one if you wish to use tf-idf
 if mr_tf != 0:
     # CALCULATE TERM-FREQUENCY (TF - Normalized)
     TF = {}
