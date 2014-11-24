@@ -5,6 +5,7 @@ from ex1HTML import *
 
 __author__ = 'Jorge Cruz' + 'Adrien Aguado'
 
+from timeit import Timer
 import json
 import cookielib
 import re
@@ -198,47 +199,47 @@ lexicon = dictAllWords.keys()
 cleanUnecessaryDocs()
 dic_key = dictAllDocs.keys()
 
-# CALCULATE TERM-FREQUENCY (TF - Normalized)
-TF = {}
-for key in dic_key:
-    dic = dictAllDocs[key]  # we have access here to the TF of each document
-    temp = []
-    for k, v in dic:
-        normalized = v / float(len(dic))  # Normalize the TF calculation
-        temp.append([k, normalized])
-
-    TF[key] = temp
-
-# CALCULATE Inverse Document Frequency (IDF)
-i = 0
-IDF = {}
-for word in lexicon:
-    #print str(i)
-    counter = 0
-    for key in dic_key:
-        tuple = dictAllDocs[key]
-
-        list_words = [x[0] for x in tuple]
-        #list_occur = [x[1] for x in tuple]
-
-        if word in list_words:
-            counter += 1
-
-    if counter > 0:
-        idf = 1.0 + math.log(float(len(lexicon)) / counter)
-    else:
-        idf = 1.0
-
-    IDF[word] = idf
-
-    i += 1
-
-print IDF['barack']
-print IDF['obama']
-
-# Calculate TF*IDF
 mr_tf = 0
 if mr_tf != 0:
+    # CALCULATE TERM-FREQUENCY (TF - Normalized)
+    TF = {}
+    for key in dic_key:
+        dic = dictAllDocs[key]  # we have access here to the TF of each document
+        temp = []
+        for k, v in dic:
+            normalized = v / float(len(dic))  # Normalize the TF calculation
+            temp.append([k, normalized])
+
+        TF[key] = temp
+
+    # CALCULATE Inverse Document Frequency (IDF)
+    i = 0
+    IDF = {}
+    for word in lexicon:
+        #print str(i)
+        counter = 0
+        for key in dic_key:
+            tuple = dictAllDocs[key]
+
+            list_words = [x[0] for x in tuple]
+            #list_occur = [x[1] for x in tuple]
+
+            if word in list_words:
+                counter += 1
+
+        if counter > 0:
+            idf = 1.0 + math.log(float(len(lexicon)) / counter)
+        else:
+            idf = 1.0
+
+        IDF[word] = idf
+
+        i += 1
+
+    print IDF['barack']
+    print IDF['obama']
+
+    # Calculate TF*IDF
     TF_IDF = {}
     for word in lexicon:
         idf_array = []
@@ -260,7 +261,7 @@ if mr_tf != 0:
 def readSpaceVectorsFromFile():
     i = 0
     space_vectors = []
-    while i < 100:
+    while i < len(dictAllDocs):
         f = open('vectors/' + str(i), 'r')
 
         space_vectors.append(json.load(f))
@@ -275,7 +276,7 @@ def readSpaceVectorsFromFile():
 def createSpaceVectors():
     i = 0
     space_vectors = []
-    while i < 100:
+    while i < len(dictAllDocs):
         dic_A = dictAllDocs[dic_key[i]]  # here we have a dictionary with all docs
 
         f = open('vectors/' + str(i), 'w')
@@ -335,10 +336,7 @@ def cosine(doc_1, doc_2):
 
     res_2 = sum_3 ** 0.5  # pow
 
-    if res_1 == 0:
-        return 0
-
-    if res_2 == 0:
+    if res_1 == 0 or res_2 == 0:
         return 0
 
     cosine = sum / (res_1 * res_2)
@@ -360,54 +358,110 @@ similar_docs = {}
 randomDocs = []
 
 
+# This function gets the index of the dictionary given a key
+def getDictAllDocsIndex(key):
+    i = 0
+    for k in dictAllDocs:
+        if k.split('_')[1] == key:
+            return i
+
+        i += 1
+
+    return -1  # never reaches here (aka paranoid code)
+
+
+def getDocumentNameByIndex(index):
+    i = 0
+    for doc in dictAllDocs:
+        if i == index:
+            return doc
+
+        i += 1
+
+    return -1  # never reaches here (aka paranoid code)
+
 # CHOOSES HERE 5 RANDOM DOCUMENTS AND THEN GENERATES SUGGESTIONS
 i = 0
-lex = []
 sum_numpy = 0
+vector = []
+random = 0  # change to 0/1 (false/true) if you are working with random or not (CHANGE THIS TO DO THE EX2 WARMUP TO 1 AND TO 0 FOR 2BIS)
+
+print '--SIMILAR DOCS BETWEEN THEM--'
 while i < 5:
-    randNumber = randint(0, 99)
-    if randNumber not in randomDocs:
-        print 'rand=' + str(randNumber)
-        randomDocs.append(randNumber)
-        sum_numpy += numpy.array(space_vectors[randNumber])
-        i += 1
+    if random == 1:
+        randNumber = randint(0, len(dictAllDocs))
+        if randNumber not in randomDocs:
+            print 'rand=' + str(randNumber)
+            randomDocs.append(randNumber)
+            vector.append(randNumber)
+            sum_numpy += numpy.array(space_vectors[randNumber])  # sum's here all the vectors using numpy to be faster/elegant
+            print getDocumentNameByIndex(randNumber)
 
-# Sum the space vectors of each document
-# It's code prettier using numpy to sum the vectors instead of summing each element by each element
-a = numpy.array(space_vectors[randomDocs[0]])
-b = numpy.array(space_vectors[randomDocs[1]])
-c = numpy.array(space_vectors[randomDocs[2]])
-d = numpy.array(space_vectors[randomDocs[3]])
-e = numpy.array(space_vectors[randomDocs[4]])
-
-sum = a + b + c + d + e
-u = sum.tolist()
-
-i = 1
-max = 0
-doc = 0
-
-while i < 0:
-    if i not in randomDocs:
-        cos = cosine(u, space_vectors[i])
-        similar_docs[i] = cos
-        i += 1
     else:
-        i += 1
+        vector = [43, 74, 0, 62, 32] # change here your random documents extract earlier for warmstart
+        sum_numpy += numpy.array(space_vectors[vector[i]])
+        print getDocumentNameByIndex(vector[i])
 
-maxAux = sorted(similar_docs.items(), key=itemgetter(1), reverse=True)
-
-i = 0
-for item in maxAux:
-    if i >= 5:
-        break
-    print "Doc " + str(item[0]) + " - Cos " + str(item[1])
     i += 1
 
-cos2 = 1 - scipy.spatial.distance.cosine(u, v)
-d = scipy.spatial.distance.cityblock(u, v)
-d2 = scipy.spatial.distance.euclidean(u, v)
-correlation = scipy.spatial.distance.correlation(u, v)
+u = sum_numpy.tolist()# --- UNCOMENT THIS FOR NUMPY
+#u = space_vectors[0]  # I CHOOSE THE FIRST DOCUMENT IN THE DICTIONARY
+
+similar_docs_scipy = {}
+
+time_our = 0
+time_scipy = 0
+
+i = 0 # PUT THIS AT 0 FOR NUMPY
+while i < len(dictAllDocs):
+    if i not in randomDocs:  # if we are not in the document calculate it's cosine
+        if i not in vector:
+            # COMMENT THIS LINES AT A TIME TO DO FIRST THE EXERCISE 2 AND THEN 2 BIS
+            #timeit.timeit(cosine(u, space_vectors[i]))  # computes the cosine (EXERCISE 2)
+            #timeit.timeit(1 - scipy.spatial.distance.cosine(u, space_vectors[i]))  # computes the cosine using scipy (EXERCISE 2 BIS)
+
+            t = Timer(lambda: cosine(u, space_vectors[i]))
+            similar_docs[i] = cosine(u, space_vectors[i])
+
+            t2 = Timer(lambda: 1 - scipy.spatial.distance.cosine(u, space_vectors[i]))
+            similar_docs_scipy[i] = 1 - scipy.spatial.distance.cosine(u, space_vectors[i])
+
+            time_our += t.timeit(number=1)
+            time_scipy += t2.timeit(number=1)
+    i += 1
+
+print 'OUR COSSINE TOOK: ' + str(time_our)
+print 'SCIPY TOOK: ' + str(time_scipy)
+
+#  REMOVE HERE POSSIBLE NaN's
+keys = similar_docs_scipy.keys()
+for key in keys:
+    if math.isnan(similar_docs_scipy[key]):
+        similar_docs_scipy.pop(key)
+
+maxAux = sorted(similar_docs.items(), key=itemgetter(1), reverse=True)  # sort the array by desc
+maxscipy = sorted(similar_docs_scipy.items(), key=itemgetter(1), reverse=True)
+
+i = 0
+print 'OUR COSSINE FUNCTION'
+for item in maxAux:
+    if i >= 5:  # we just choose to display the top5 matches
+        break
+    print "Doc " + getDocumentNameByIndex(item[0]) + " - cos " + str(item[1])
+    i += 1
+
+i = 0
+print 'SCIPY COSSINE FUNCTION'
+for item in maxscipy:
+    if i >= 5:  # we just choose to display the top5 matches
+        break
+    print "Doc " + getDocumentNameByIndex(item[0]) + " - cos " + str(item[1])
+    i += 1
+
+#cos2 = 1 - scipy.spatial.distance.cosine(u, v)
+#d = scipy.spatial.distance.cityblock(u, v)
+#d2 = scipy.spatial.distance.euclidean(u, v)
+#correlation = scipy.spatial.distance.correlation(u, v)
 
 
 def generateTopics():
