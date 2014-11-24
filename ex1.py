@@ -495,13 +495,13 @@ def generateTopics():
     corpus_tfidf = tfidf[corpus]
 
     #Initialize LSI Transformation
-    lsi = models.LsiModel(corpus_tfidf, num_topics=93, id2word=dictionary)
+    lsi = models.LsiModel(corpus_tfidf, num_topics=len(dictAllDocs), id2word=dictionary)
 
     #Print the topics using LSI
     print "\nPrinting topics using LSI:"
     i = 0
     w2 = []
-    for topic in lsi.show_topics(num_topics=93):
+    for topic in lsi.show_topics(num_topics=len(dictAllDocs)):
         words = []
         ww = (topic.split("\""))
         j = 0
@@ -520,12 +520,12 @@ def generateTopics():
         i += 1
 
     #Initialize LDA transformation
-    lda = models.ldamodel.LdaModel(corpus, num_topics=93)
+    lda = models.ldamodel.LdaModel(corpus, num_topics=len(dictAllDocs))
 
     # print the topics using LDA
     print "\nPrinting topics using LDA:"
     i = 0
-    for topic in lda.show_topics(num_topics=93, formatted=False):
+    for topic in lda.show_topics(num_topics=len(dictAllDocs), formatted=False):
         i += 1
         print "Topic #" + str(i) + ":",
         for p, id in topic:
