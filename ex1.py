@@ -381,7 +381,8 @@ def getDocumentNameByIndex(index):
     return -1  # never reaches here (aka paranoid code)
 
 # PUT THIS VARIABLE TO 0 TO CALCULATE THE COSSINES AND ETC
-just_LSI_LDA = 1
+# PUT IT  TO 1 TO CALCULATE JUST LSI/LDA
+just_LSI_LDA = 0
 
 if just_LSI_LDA == 0:
     # CHOOSES HERE 5 RANDOM DOCUMENTS AND THEN GENERATES SUGGESTIONS
