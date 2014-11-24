@@ -37,7 +37,7 @@ def createSpaceVectors():
         while z < len(lexicon):
             word = lexicon[z]
             if word in words_A:
-                space_vector[z] = find_tupple(dic_A, word)
+                space_vector[z] = find_tuple(dic_A, word)
 
             z += 1
 

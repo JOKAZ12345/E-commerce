@@ -14,6 +14,7 @@ import numpy
 from nltk.corpus import stopwords
 from operator import itemgetter
 import scipy.spatial.distance
+import math
 from random import randint
 from gensim import corpora, models
 from gensim.models import ldamodel
@@ -38,7 +39,7 @@ tosave = "results/page_%d"  # Sets where it should save the parsing results of e
 #  EXERCISE 2
 lexicon = []
 
-def find_tupple(dic, word):
+def find_tuple(dic, word):
     for d in dic:
         if d[0] == word:
             return d[1]
@@ -182,12 +183,78 @@ while e != z:
 countWords()  # Reads the words from /results/..
 
 _s = sorted(dictAllWords.items(), key=itemgetter(1), reverse=True)  # and we have all how many times the words repeat themselves
-# dictAllWord has ours Vectors Space Models
 
 #<-----------------------------EXERCISE 2 AND 2BIS------------------------>
 
+#Remove documents with less than 10 terms/words
+def cleanUnecessaryDocs():
+    for k in dictAllDocs.keys():
+        if len(dictAllDocs[k]) < 10:
+            dictAllDocs.pop(k)
+
 dic_key = dictAllDocs.keys()
 lexicon = dictAllWords.keys()
+
+cleanUnecessaryDocs()
+dic_key = dictAllDocs.keys()
+
+# CALCULATE TERM-FREQUENCY (TF - Normalized)
+TF = {}
+for key in dic_key:
+    dic = dictAllDocs[key]  # we have access here to the TF of each document
+    temp = []
+    for k, v in dic:
+        normalized = v / float(len(dic))  # Normalize the TF calculation
+        temp.append([k, normalized])
+
+    TF[key] = temp
+
+# CALCULATE Inverse Document Frequency (IDF)
+i = 0
+IDF = {}
+for word in lexicon:
+    #print str(i)
+    counter = 0
+    for key in dic_key:
+        tuple = dictAllDocs[key]
+
+        list_words = [x[0] for x in tuple]
+        #list_occur = [x[1] for x in tuple]
+
+        if word in list_words:
+            counter += 1
+
+    if counter > 0:
+        idf = 1.0 + math.log(float(len(lexicon)) / counter)
+    else:
+        idf = 1.0
+
+    IDF[word] = idf
+
+    i += 1
+
+print IDF['barack']
+print IDF['obama']
+
+# Calculate TF*IDF
+mr_tf = 0
+if mr_tf != 0:
+    TF_IDF = {}
+    for word in lexicon:
+        idf_array = []
+        for v in TF:  # iterates each doc tf
+            idf = IDF[word]
+            for x, y in TF[v]:
+                if x == word:
+                    idf_array.append([v, idf * float(y)])
+                    break
+
+        TF_IDF[word] = idf_array
+
+    print 'tf-ldf done'
+
+    print TF_IDF['barack']
+    print TF_IDF['obama']
 
 
 def readSpaceVectorsFromFile():
@@ -209,7 +276,7 @@ def createSpaceVectors():
     i = 0
     space_vectors = []
     while i < 100:
-        dic_A = dictAllDocs[dic_key[i]]
+        dic_A = dictAllDocs[dic_key[i]]  # here we have a dictionary with all docs
 
         f = open('vectors/' + str(i), 'w')
 
@@ -218,21 +285,20 @@ def createSpaceVectors():
         for word in dic_A:
             words_A.append(word[0])
 
-        # bzero the space vector
-        space_vector = [0] * len(lexicon)
+        space_vector = [0] * len(lexicon)  # bzero the space vector
 
         z = 0
         while z < len(lexicon):
             word = lexicon[z]
             if word in words_A:
-                space_vector[z] = find_tupple(dic_A, word)
+                space_vector[z] = find_tuple(dic_A, word)  # has to find the right tuple for this word
 
             z += 1
 
-        space_vectors.append(space_vector)
+        space_vectors.append(space_vector)  # add the space vector to the collection
         i += 1
 
-        json.dump(space_vector, f)
+        json.dump(space_vector, f)  # dump to a file
         f.close()
 
     return space_vectors
@@ -297,11 +363,13 @@ randomDocs = []
 # CHOOSES HERE 5 RANDOM DOCUMENTS AND THEN GENERATES SUGGESTIONS
 i = 0
 lex = []
+sum_numpy = 0
 while i < 5:
     randNumber = randint(0, 99)
     if randNumber not in randomDocs:
         print 'rand=' + str(randNumber)
         randomDocs.append(randNumber)
+        sum_numpy += numpy.array(space_vectors[randNumber])
         i += 1
 
 # Sum the space vectors of each document
@@ -341,13 +409,6 @@ d = scipy.spatial.distance.cityblock(u, v)
 d2 = scipy.spatial.distance.euclidean(u, v)
 correlation = scipy.spatial.distance.correlation(u, v)
 
-#Remove documents with less than 10 terms/words
-def cleanUnecessaryDocs():
-    for k in dic_key:
-        if len(dictAllDocs[k]) < 10:
-            dictAllDocs.pop(k)
-
-cleanUnecessaryDocs()
 
 def generateTopics():
     #Create an array of words of each document
